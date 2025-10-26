@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "git::explorer",
-  description: "",
+  description: "Git Explorer is a Next.js and TypeScript application for simplified analysis of GitHub profiles. It allows you to search for users and instantly view their public repositories.",
 };
 
 export default function RootLayout({
