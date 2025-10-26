@@ -13,7 +13,9 @@ interface MinimalRepositoryCardProps {
     stargazers_count: number;
     forks_count: number;
     updated_at: string;
+    created_at: string;
     commits_count?: number;
+    commits_by_date?: Record<string, number>;
   };
   index: number;
 }
@@ -101,7 +103,12 @@ export function MinimalRepositoryCard({ repo, index }: MinimalRepositoryCardProp
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <ContributionHeatmap commits={commits} updatedAt={repo.updated_at} />
+            <ContributionHeatmap 
+              commits={commits} 
+              updatedAt={repo.updated_at}
+              createdAt={repo.created_at}
+              commitsByDate={repo.commits_by_date}
+            />
           </motion.div>
         )}
       </div>

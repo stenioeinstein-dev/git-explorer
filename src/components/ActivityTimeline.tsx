@@ -131,9 +131,9 @@ export function ActivityTimeline({ repos }: ActivityTimelineProps) {
             className="overflow-x-auto overflow-y-hidden scrollbar-thin scrollbar-thumb-blue-500/30 scrollbar-track-gray-900/50"
             style={{ scrollbarWidth: 'thin' }}
           >
-            <div className="p-6 min-w-max">
+            <div className="px-6 pb-0 pt-6 min-w-max">
               {/* Chart */}
-              <div className="flex items-end gap-4 h-48 mb-4">
+              <div className="flex items-end gap-4 h-16 mb-4">
                 {monthlyData.map((data, index) => {
                   const height = data.count > 0 ? (data.count / maxCount) * 100 : 0;
                   const hasRepos = data.count > 0;
