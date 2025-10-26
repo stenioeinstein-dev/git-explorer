@@ -1,12 +1,12 @@
-#Git Explorer: Navegação Simplificada no GitHub
+# Git Explorer: Navegação Simplificada no GitHub
 
-###Visão Geral
+### Visão Geral
 
 O Git Explorer é uma aplicação web de alto desempenho projetada para simplificar a descoberta e a análise de projetos no GitHub. A ferramenta permite que usuários busquem e visualizem de forma rápida e intuitiva todos os repositórios públicos de qualquer usuário do GitHub, servindo como uma ponte eficiente entre o seu portfólio e o vasto ecossistema do GitHub.
 
 Seja você um desenvolvedor buscando inspiração em código aberto ou um recrutador avaliando a experiência de um candidato, o Git Explorer fornece uma interface limpa e focada nos dados essenciais.
 
-###Stack Tecnológico
+### Stack Tecnológico
 
 Este projeto foi desenvolvido utilizando uma stack moderna e robusta, focada em performance, escalabilidade e experiência do desenvolvedor:
 
@@ -16,7 +16,7 @@ TypeScript: Garante segurança de código e tipagem forte em toda a aplicação,
 
 Tailwind CSS: Framework CSS utility-first que permitiu o desenvolvimento de uma interface responsiva, modular e com um design sofisticado e escuro (dark mode-inspired).
 
-###Funcionalidades Principais
+### Funcionalidades Principais
 
 Busca Instantânea por Usuário: Campo de busca com validação em tempo real para localizar perfis do GitHub.
 
