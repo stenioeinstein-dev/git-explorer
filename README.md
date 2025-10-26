@@ -1,31 +1,31 @@
-# Git Explorer: Navegação Simplificada no GitHub
+# Git Explorer: Simplified Navigation on GitHub
 
-### Visão Geral
+### Overview
 
-O Git Explorer é uma aplicação web de alto desempenho projetada para simplificar a descoberta e a análise de projetos no GitHub. A ferramenta permite que usuários busquem e visualizem de forma rápida e intuitiva todos os repositórios públicos de qualquer usuário do GitHub, servindo como uma ponte eficiente entre o seu portfólio e o vasto ecossistema do GitHub.
+Git Explorer is a high-performance web application designed to simplify the discovery and analysis of projects on GitHub. The tool allows users to quickly and intuitively search and view all public repositories of any GitHub user, serving as an efficient bridge between your portfolio and the vast GitHub ecosystem.
 
-Seja você um desenvolvedor buscando inspiração em código aberto ou um recrutador avaliando a experiência de um candidato, o Git Explorer fornece uma interface limpa e focada nos dados essenciais.
+Whether you are a developer seeking inspiration in open source or a recruiter evaluating a candidate's experience, Git Explorer provides a clean interface focused on essential data.
 
-### Stack Tecnológico
+### Technology Stack
 
-Este projeto foi desenvolvido utilizando uma stack moderna e robusta, focada em performance, escalabilidade e experiência do desenvolvedor:
+This project was developed using a modern and robust stack focused on performance, scalability, and developer experience:
 
-Next.js: Utilizado como framework React, oferecendo renderização do lado do servidor (SSR) ou estática para garantir tempos de carregamento rápidos e SEO otimizado.
+Next.js: Used as a React framework, offering server-side rendering (SSR) or static rendering to ensure fast loading times and optimized SEO.
 
-TypeScript: Garante segurança de código e tipagem forte em toda a aplicação, minimizando erros e facilitando a manutenção em equipe.
+TypeScript: Ensures code security and strong typing throughout the application, minimizing errors and facilitating team maintenance.
 
-Tailwind CSS: Framework CSS utility-first que permitiu o desenvolvimento de uma interface responsiva, modular e com um design sofisticado e escuro (dark mode-inspired).
+Tailwind CSS: Utility-first CSS framework that enabled the development of a responsive, modular interface with a sophisticated, dark mode-inspired design.
 
-### Funcionalidades Principais
+### Key Features
 
-Busca Instantânea por Usuário: Campo de busca com validação em tempo real para localizar perfis do GitHub.
+Instant User Search: Search field with real-time validation to locate GitHub profiles.
 
-Visão Geral do Perfil: Exibe informações chaves do usuário encontrado (avatar, biografia, seguidores/seguindo).
+Profile Overview: Displays key information about the user found (avatar, bio, followers/following).
 
-Listagem de Repositórios: Apresenta todos os repositórios públicos do usuário em um layout de fácil leitura.
+Repository Listing: Displays all of the user's public repositories in an easy-to-read layout.
 
-Filtros e Classificação: Permite classificar os repositórios por nome, data de atualização e popularidade (número de estrelas).
+Filters and Sorting: Allows you to sort repositories by name, update date, and popularity (number of stars).
 
-Detalhes Essenciais: Para cada repositório, são exibidos dados cruciais como a linguagem principal, contagem de estrelas (★), licença e link direto para o GitHub.
+Essential Details: For each repository, crucial data such as the main language, star count (★), license, and direct link to GitHub are displayed.
 
-Design Responsivo: Interface perfeitamente adaptada para desktops, tablets e dispositivos móveis, garantindo usabilidade em qualquer ambiente.
+Responsive Design: Interface perfectly adapted for desktops, tablets, and mobile devices, ensuring usability in any environment.
