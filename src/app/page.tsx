@@ -9,6 +9,8 @@ import { ActivityTimeline } from "@/components/ActivityTimeline";
 import { CodeBlock, Syntax } from "@/components/CodeBlock";
 import { AlertCircle, Loader2, Terminal } from "lucide-react";
 
+import Link from "next/link";
+
 interface GitHubUser {
   login: string;
   name: string;
@@ -51,7 +53,7 @@ export default function App() {
 
     try {
       const userResponse = await fetch(`https://api.github.com/users/${username}`);
-      
+
       if (!userResponse.ok) {
         if (userResponse.status === 404) {
           throw new Error("User not found");
@@ -68,7 +70,7 @@ export default function App() {
 
       if (reposResponse.ok) {
         const reposData = await reposResponse.json();
-        
+
         // Buscar commits para cada repositório
         const reposWithCommits = await Promise.all(
           reposData.map(async (repo: GitHubRepo) => {
@@ -77,12 +79,12 @@ export default function App() {
               const commitsResponse = await fetch(
                 `https://api.github.com/repos/${username}/${repo.name}/commits?per_page=1`
               );
-              
+
               if (commitsResponse.ok) {
                 // GitHub retorna o total de commits no header Link
                 const linkHeader = commitsResponse.headers.get('Link');
                 let commitsCount = 1;
-                
+
                 if (linkHeader) {
                   // Extrair o número total de páginas do header Link
                   const match = linkHeader.match(/page=(\d+)>; rel="last"/);
@@ -94,17 +96,17 @@ export default function App() {
                   const commits = await commitsResponse.json();
                   commitsCount = commits.length;
                 }
-                
+
                 return { ...repo, commits_count: commitsCount };
               }
             } catch (error) {
               console.error(`Error fetching commits for ${repo.name}:`, error);
             }
-            
+
             return { ...repo, commits_count: 0 };
           })
         );
-        
+
         setRepos(reposWithCommits);
       }
     } catch (err) {
@@ -125,8 +127,8 @@ export default function App() {
     <div className="min-h-screen bg-gray-950 text-gray-100 overflow-x-hidden">
       <ParallaxBackground />
 
-      <MinimalSearchHeader 
-        onSearch={fetchGitHubData} 
+      <MinimalSearchHeader
+        onSearch={fetchGitHubData}
         onReset={handleReset}
         isLoading={isLoading}
         hasResults={!!user || !!error}
@@ -151,7 +153,7 @@ export default function App() {
                 <div className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"></div>
                 <span className="font-mono text-blue-400">beta v1.0</span>
               </motion.div>
-              
+
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -160,7 +162,7 @@ export default function App() {
               >
                 GitHub Profile Explorer
               </motion.h1>
-              
+
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -300,11 +302,14 @@ export default function App() {
       <footer className="relative border-t border-blue-500/10 mt-20">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between text-gray-600 font-mono">
-            <span>// built with Next.js + TypeScript</span>
+            <span>1  // built with Next.js + TypeScript</span>
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
-              <span>online</span>
+              <div className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"></div>
+              <span>beta v1.0</span>
             </div>
+          </div>
+          <div className="flex items-center justify-between text-gray-600 font-mono mt-2">
+            <Link href="https://stenioeinstein.vercel.app/dev" ><span>2  // Developed by St</span></Link>
           </div>
         </div>
       </footer>
