@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#Git Explorer: Navegação Simplificada no GitHub
 
-## Getting Started
+###Visão Geral
 
-First, run the development server:
+O Git Explorer é uma aplicação web de alto desempenho projetada para simplificar a descoberta e a análise de projetos no GitHub. A ferramenta permite que usuários busquem e visualizem de forma rápida e intuitiva todos os repositórios públicos de qualquer usuário do GitHub, servindo como uma ponte eficiente entre o seu portfólio e o vasto ecossistema do GitHub.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+###Stack Tecnológico
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este projeto foi desenvolvido utilizando uma stack moderna e robusta, focada em performance, escalabilidade e experiência do desenvolvedor:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js: Utilizado como framework React, oferecendo renderização do lado do servidor (SSR) ou estática para garantir tempos de carregamento rápidos e SEO otimizado.
 
-## Learn More
+TypeScript: Garante segurança de código e tipagem forte em toda a aplicação, minimizando erros e facilitando a manutenção em equipe.
 
-To learn more about Next.js, take a look at the following resources:
+Tailwind CSS: Framework CSS utility-first que permitiu o desenvolvimento de uma interface responsiva, modular e com um design sofisticado e escuro (dark mode-inspired).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+###Funcionalidades Principais
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Busca Instantânea por Usuário: Campo de busca com validação em tempo real para localizar perfis do GitHub.
 
-## Deploy on Vercel
+Visão Geral do Perfil: Exibe informações chaves do usuário encontrado (avatar, biografia, seguidores/seguindo).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Listagem de Repositórios: Apresenta todos os repositórios públicos do usuário em um layout de fácil leitura.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Filtros e Classificação: Permite classificar os repositórios por nome, data de atualização e popularidade (número de estrelas).
+
+Detalhes Essenciais: Para cada repositório, são exibidos dados cruciais como a linguagem principal, contagem de estrelas (★), licença e link direto para o GitHub.
+
+Design Responsivo: Interface perfeitamente adaptada para desktops, tablets e dispositivos móveis, garantindo usabilidade em qualquer ambiente.
