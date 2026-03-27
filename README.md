@@ -1,5 +1,9 @@
 # Git Explorer: Simplified Navigation on GitHub
 
+##### Imagem em formato desktop.
+
+<img src="public/nova1.png" alt="Image desktop" style="width:400px;height:auto;">
+
 ### Overview
 
 Git Explorer is a high-performance web application designed to simplify the discovery and analysis of projects on GitHub. The tool allows users to quickly and intuitively search and view all public repositories of any GitHub user, serving as an efficient bridge between your portfolio and the vast GitHub ecosystem.
