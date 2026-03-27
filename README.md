@@ -2,7 +2,7 @@
 
 ##### Imagem em formato desktop.
 
-<img src="public/nova1.png" alt="Image desktop" style="width:400px;height:auto;">
+<img src="public/gitexplorer.png" alt="Image desktop" style="width:400px;height:auto;">
 
 ### Overview
 
